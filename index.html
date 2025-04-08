@@ -3,15 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="newyorktimer_stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="newyorktimer_logics.js"></script>
     <title>NewYorkTimer's Portfolio</title>
 </head>
 <body>
-<div>
-    <div id="topnav">
-        <h1 id="logoText">newYorkTimer();</h1>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="https://github.com/NewYorkTimer/" target="_blank">newYorkTimer();</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://steamcommunity.com/id/newyorktimer/" target="_blank" class="actionButton">Steam Profile</a>
+        <div class="toggleButton">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
     </div>
-    <div></div>
-</div>
+
+    <div class="dropdownMenu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://steamcommunity.com/id/newyorktimer/" target="_blank" class="actionButton">Steam Profile</a></li>
+    </div>
+
+</header>
+
+<main>
+    <section id="hero">
+        <h1>Welcome</h1>
+        <p>I'm NewYorkTimer</p>
+        <img id="suitPicture" src="https://cdn.discordapp.com/attachments/1017342559783223357/1291321311884345384/IMG-20220701-WA0006-1.jpg?ex=67f634b0&is=67f4e330&hm=06c66975e44a432a8f45d8c5c17d7083faaf386a640cbb57915737aa4edf3b8d&">
+    </section>
+
+    <div class="line"></div>
+
+    <section id="about">
+        <h1>Welcome</h1>
+        <p>I'm NewYorkTimer</p>
+    </section>
+
+    <div class="line"></div>
+
+    <section id="experience">
+        <h1>Welcome</h1>
+        <p>I'm NewYorkTimer</p>
+    </section>
+
+    <div class="line"></div>
+
+    <section id="projects">
+        <h1>Welcome</h1>
+        <p>I'm NewYorkTimer</p>
+    </section>
+
+    <div class="line"></div>
+
+    <section id="contact">
+        <h1>Welcome</h1>
+        <p>I'm NewYorkTimer</p>
+    </section>
+</main>
+
+<script>
+    const toggleButton = document.querySelector('.toggleButton');
+    const toggleButtonIcon = document.querySelector('.toggleButton i');
+    const dropdownMenu = document.querySelector('.dropdownMenu');
+
+    toggleButton.onclick = function () {
+        dropdownMenu.classList.toggle('open');
+        const isOpen = dropdownMenu.classList.contains('open');
+
+        toggleButtonIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+    }
+</script>
 </body>
 </html>
