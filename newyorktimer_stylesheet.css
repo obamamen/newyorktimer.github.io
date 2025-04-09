@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #00ffb2;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -41,7 +45,7 @@ a {
 }
 
 a:hover {
-    color: #00e5ff;
+    color: var(--primary-color);
 }
 
 header{
@@ -49,6 +53,8 @@ header{
     padding: 0 2rem;
     margin: 0;
     border: 0;
+
+    /*border-top: rgba(255, 255, 255, 0.15) solid 2px;*/
 
     top: 0;
     z-index: 1000;
@@ -95,7 +101,11 @@ header{
 }
 
 .actionButton {
-    background-color: #2a475e;
+    /*background-color: #2a475e;*/
+    background-color: rgba(255, 255, 255, 0.15);
+    /*backdrop-filter: blur(2px);*/
+    /*-webkit-backdrop-filter: blur(2px);*/
+
     color: #ffffff;
     padding: 0.5rem 1rem;
     border: none;
